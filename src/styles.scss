@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url('../src/assets/bg.jpg');
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+@mixin primaryBtnStyles{
+    font-size: 48px;
+}
+@mixin goldBtnStyles{
+    background-color: #FAD02E;
+    border-radius: 20px;
+    color: #600034;
+    padding: 12px 24px;
+}
+.main-btn{
+    @include primaryBtnStyles();
+    @include goldBtnStyles();
+    transition: all 500ms ease ;
+}
+.info-btn{
+    @include goldBtnStyles();
+    font-size: 32px;
+    transition: all 200ms ease ;
+
+}
+
+.info-btn:hover{
+    transform: scale(1.05);
+}
+.main-btn:hover{
+    transform: scale(1.1);
+}
