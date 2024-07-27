@@ -25,13 +25,18 @@ body {
 .main-btn{
     @include primaryBtnStyles();
     @include goldBtnStyles();
+    @media screen and (max-width:768px){
+        font-size: 30px;
+    }
     transition: all 500ms ease ;
 }
 .info-btn{
     @include goldBtnStyles();
     font-size: 32px;
     transition: all 200ms ease ;
-
+    @media screen and (max-width:768px){
+        font-size: 20px;
+    }
 }
 
 .info-btn:hover{

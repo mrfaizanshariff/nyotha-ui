@@ -1,5 +1,5 @@
-<section class="flex items-center">
-    <div class="pl-10 mt-10">
+<section class="flex gap-4 md:gap-0 flex-col md:flex-row items-center">
+    <div class="md:pl-10 mt-10">
         <h1 id='title'>
             <!-- Nyotha -->
         </h1>
@@ -7,23 +7,23 @@
             Your personalized <br> 
             invitation website <br> 
             Starting at just <br>
-            <span style="color: #FAD02E;font-size: 85px;">
+            <span>
                 99₹ /day
             </span>
                 
         </h2>
     </div>
-    <div id="cta-button" class="ml-[20%]">
+    <div id="cta-button" class="md:ml-[20%]">
         <button class="main-btn">
             Get started
         </button>
     </div>
 </section>
-<section class="flex p-24 gap-6 flex-col">
-    <div class="text-6xl text-white">
+<section class="flex p-4 md:p-24 gap-6 flex-col">
+    <div class="features-text text-3xl md:text-6xl text-white">
         Features of our digital invitations
     </div>
-    <div class="grid gap-7 grid-cols-2">
+    <div class="grid gap-7 grid-cols-1 md:grid-cols-2">
         <div class="info-btn">GMaps Location of Venue</div>
         <div class="info-btn">Whatsapp DM Button</div>
         <div class="info-btn">RSVP details</div>
@@ -32,8 +32,8 @@
         <div class="info-btn">Gift Money QR code</div>
     </div>
 </section>
-<section class="flex p-24 gap-6 flex-col">
-    <div class="text-6xl text-white">
+<section class="flex p-4 md:p-24 gap-6 flex-col">
+    <div class="features-text text-3xl md:text-6xl text-white">
        How to order
     </div>
     <div class="grid gap-7 grid-cols-1">
@@ -43,19 +43,22 @@
         <div class="info-btn">Once confirmed and payment is done, the website will be live for the set duration</div>
     </div>
 </section>
-<section class="flex p-24 gap-6 flex-col">
-    <div class="text-6xl text-white">
+<section class="flex p-4 md:p-24 gap-6 flex-col">
+    <div class="features-text text-3xl md:text-6xl text-white">
        Check out the templates
     </div>
+    <div>
     <div class="flex gap-7">
-        <div class="info-btn cursor-pointer w-[25%] h-[500px]"></div>
-        <div class="info-btn cursor-pointer w-[25%] h-[500px]"></div>
-        <div class="info-btn cursor-pointer w-[25%] h-[500px]"></div>
-        <div class="info-btn cursor-pointer w-[25%] h-[500px]"></div>
+        <div class="info-btn cursor-pointer w-[60%] md:w-[25%] h-[250px] md:h-[500px]"></div>
+            <div class="info-btn cursor-pointer w-[60%] md:w-[25%] h-[250px] md:h-[500px]"></div>
+            <div class="info-btn cursor-pointer w-[60%] md:w-[25%] h-[250px] md:h-[500px]"></div>
+            <div class="info-btn cursor-pointer w-[60%] md:w-[25%] h-[250px] md:h-[500px]"></div>
+
+        </div>
     </div>
     <div class="text-center">
         <button class="main-btn">
-            View All Samples
+            <a [routerLink]="[ 'sample']">View All Samples</a>
         </button>
     </div>
 </section>

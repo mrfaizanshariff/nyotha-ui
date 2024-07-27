@@ -7,5 +7,29 @@ section{
     h2{
         font-size: 60px;
         color: #fff;
+        span{
+            color: #FAD02E;font-size: 85px;
+        }
+    }
+
+    @media screen and (max-width:768px) {
+        h1{font-size: 80px;}
+        h2{
+            font-size: 40px; 
+            font-size: 40px;
+            background: black;
+        /* color: #FAD02E; */
+            border-radius: 24px;
+            padding: 12px;
+            span{
+                font-size: 55px;
+            }
+        }
+        .features-text{
+            background: black;
+            /* color: #FAD02E; */
+            border-radius: 24px;
+            padding: 12px;
+        }
     }
 }
